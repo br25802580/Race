@@ -33,6 +33,7 @@
  */
 
 declare var jQuery:any;
+//declare var $:JQueryStatic;
 declare var GoogleMapsLoader:any;
 declare var L:any;
 declare var AmCharts:any;
