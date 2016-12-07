@@ -6,13 +6,15 @@ import { NgaModule } from '../theme/nga.module';
 import { Search } from './search.component';
 import { StoreListComponent } from './store-list/store-list.component';
 import { StoreListService } from './store-list/store-list.service';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     NgaModule,
-    CKEditorModule
+    CKEditorModule,
+    RouterModule
   ],
   declarations: [
     Search,

@@ -18,6 +18,7 @@ import { GlobalState } from './global.state';
 import { NgaModule } from './theme/nga.module';
 import { HomeModule } from './home/home.module';
 import { SearchModule } from './search/search.module';
+import { MapModule } from './map/map.module';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -48,6 +49,7 @@ type StoreType = {
     NgaModule.forRoot(),
     HomeModule,
     SearchModule,
+    MapModule,
     routing
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection

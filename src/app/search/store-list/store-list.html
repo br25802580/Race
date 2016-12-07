@@ -10,6 +10,7 @@
     <div class="text-block text-message">
       <div class="message-header">
         <span class="author">{{ message.author }} {{ message.surname}}</span>
+        <button routerLink="/map" class="btn btn-default  btn-xs">View in Map</button>
       </div>
       <div class="message-content line-clamp" [ngClass]="{'line-clamp-2' : !message.expanded}">
         <span *ngIf="message.preview">{{ message.header }} </span>{{ message.text }}
