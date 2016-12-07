@@ -1,10 +1,12 @@
 import { Routes, RouterModule } from '@angular/router';
-import { Home } from './pages/home/home.component';
+import { Home } from './home/home.component';
+import { Search } from './search/search.component';
 
 export const routes: Routes = [
+  { path: 'search', component:Search },
+  { path: 'home', component: Home },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '**', redirectTo: 'home' },
-  { path: 'home', component: Home }
+  { path: '**', redirectTo: 'home' }
 ];
 
 export const routing = RouterModule.forRoot(routes, { useHash: true });
