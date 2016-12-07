@@ -1,7 +1,11 @@
-@import '../../../theme/sass/conf/conf';
+@import '../../theme/sass/conf/conf';
 
 .feed-panel .card-body{
   padding: 10px 0;
+}
+
+.feed-messages-container{
+  margin: 20px 0;
 }
 
 .feed-message {

@@ -1,18 +1,17 @@
 import {Component, ViewEncapsulation} from '@angular/core';
-
-import {FeedService} from './feed.service';
+import {StoreListService} from './store-list.service';
 
 @Component({
-  selector: 'feed',
+  selector: 'store-list',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./feed.scss')],
-  template: require('./feed.html')
+  styles: [require('./store-list.scss')],
+  template: require('./store-list.html')
 })
-export class Feed {
+export class StoreListComponent {
 
   public feed:Array<Object>;
 
-  constructor(private _feedService:FeedService) {
+  constructor(private storeListService:StoreListService) {
   }
 
   ngOnInit() {
@@ -24,6 +23,6 @@ export class Feed {
   }
 
   private _loadFeed() {
-    this.feed = this._feedService.getData();
+    this.feed = this.storeListService.getData();
   }
 }

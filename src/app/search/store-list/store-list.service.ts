@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 
 @Injectable()
-export class FeedService {
+export class StoreListService {
 
   private _data = [
     {
