@@ -61,13 +61,14 @@ a {
 
 .al-main {
   margin-left: $left-space;
-  padding: 66px 0 34px 0;
+  /*padding: 66px 0 34px 0;  by br*/
+  padding: 66px 0 0 0;
   min-height: 500px;
   position: relative;
 }
 
 .al-footer {
-  height: 34px;
+  /*height: 34px; by r*/
   padding: 0 18px 0 ($left-space + 20px);
   width: 100%;
   position: absolute;
@@ -121,7 +122,8 @@ a {
       box-sizing: content-box;
       font-size: 16px;
       &:hover {
-        transform: scale(1.2);
+         /*transform: scale(1.2); by br*/
+        transform: scale(1.1);
       }
     }
     i.fa-facebook-square {
@@ -192,12 +194,12 @@ a {
     margin-right: 0;
   }
   .al-footer {
-    height: 76px;
+    /*height: 76px; by br*/
     text-align: center;
   }
-  .al-main {
-    padding-bottom: 76px;
-  }
+  /*.al-main {
+    padding-bottom: 76px; //by br
+  }*/
   .al-footer-main {
     float: none;
     display: inline-block;

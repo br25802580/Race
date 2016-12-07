@@ -17,6 +17,7 @@ import { AppState, InternalStateType } from './app.service';
 import { GlobalState } from './global.state';
 import { NgaModule } from './theme/nga.module';
 import { PagesModule } from './pages/pages.module';
+import { HomeModule } from './pages/home/home.module';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -46,6 +47,7 @@ type StoreType = {
     ReactiveFormsModule,
     NgaModule.forRoot(),
     PagesModule,
+    HomeModule,
     routing
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection

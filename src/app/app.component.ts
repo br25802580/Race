@@ -16,7 +16,20 @@ import { BaThemeConfig } from './theme/theme.config';
   template: `
     <main [ngClass]="{'menu-collapsed': isMenuCollapsed}" baThemeRun>
       <div class="additional-bg"></div>
-      <router-outlet></router-outlet>
+      <ba-sidebar></ba-sidebar>
+    <ba-page-top></ba-page-top>
+    <div class="al-main">
+      <div class="al-content">
+        <ba-content-top></ba-content-top>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    <footer class="al-footer clearfix">
+      <div class="al-footer-main clearfix">
+        <div class="al-copy">&copy; Created by Chaya Glik, 2016</div>
+      </div>
+    </footer>
+    <ba-back-top position="200"></ba-back-top>
     </main>
   `
 })
