@@ -3,5 +3,10 @@
         <div>
             <h2>Here you can watch stores into map</h2>
         </div>
+        <div>
+            <sebm-google-map [latitude]="point.lat" [longitude]="point.lng" [zoom]="16">
+                <sebm-google-map-marker [latitude]="point.lat" [longitude]="point.lng"></sebm-google-map-marker>
+            </sebm-google-map>
+        </div>
     </div>
 </div>

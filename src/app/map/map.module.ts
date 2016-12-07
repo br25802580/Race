@@ -5,7 +5,7 @@ import { CKEditorModule } from 'ng2-ckeditor';
 import { NgaModule } from '../theme/nga.module';
 import { Map } from './map.component';
 import { RouterModule } from '@angular/router';
-
+import { AgmCoreModule } from 'angular2-google-maps/core';
 
 @NgModule({
   imports: [
@@ -13,7 +13,8 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     FormsModule,
     NgaModule,
-    CKEditorModule
+    CKEditorModule,
+    AgmCoreModule
   ],
   declarations: [
     Map

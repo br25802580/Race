@@ -19,6 +19,7 @@ import { NgaModule } from './theme/nga.module';
 import { HomeModule } from './home/home.module';
 import { SearchModule } from './search/search.module';
 import { MapModule } from './map/map.module';
+import { AgmCoreModule } from 'angular2-google-maps/core';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -50,7 +51,8 @@ type StoreType = {
     HomeModule,
     SearchModule,
     MapModule,
-    routing
+    routing,
+    AgmCoreModule.forRoot({ apiKey: 'AIzaSyA3MSv-mmUENEGYU4-0d37eWaASZji01zQ' }),
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
