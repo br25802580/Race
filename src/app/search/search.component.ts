@@ -3,7 +3,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'search',
   encapsulation: ViewEncapsulation.None,
-  template: require('./search.html'),
+    template: `<router-outlet></router-outlet>`,
+  //template: require('./search.html'),
   styles: [require('./search.scss')]
 })
 

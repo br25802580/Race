@@ -3,8 +3,11 @@
 .content-top {
     /*padding-top: 13px;
   padding-bottom: 27px; by br*/
-  padding-top: 10px;
-  padding-bottom: 12px;
+  /*padding-top: 10px;
+  padding-bottom: 12px; by br*/
+  padding-top: 13px;
+  /*padding-bottom: 27px; //by br*/
+  padding-bottom: 10px;
 }
 
 h1.al-title {
@@ -25,9 +28,10 @@ h1.al-title {
   padding: 0;
   margin: 0;
   float: right;
-  padding-top: 11px;
+  /*padding-top: 11px; //by br*/
   li {
-    font-size: 18px;
+    /*font-size: 18px; // by br*/
+    font-size: 14px;
     font-weight: $font-normal;
     a {
       color: $primary-light;

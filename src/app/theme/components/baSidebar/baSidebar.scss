@@ -14,7 +14,7 @@ $angle-right: "\f101";
   background-color: $sidebar;
   height: 100%;
   position: fixed;
-  display: none; //by br
+  /*display: none; //by br*/
 }
 
 .al-sidebar-list {
@@ -121,7 +121,7 @@ a.al-sidebar-list-link {
 @mixin layout-collapsed() {
   .al-main {
     margin-left: 50px;
-    margin-left: 0px; //by br
+    /*margin-left: 0px; //by br*/
   }
 
   .al-footer {
