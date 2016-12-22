@@ -1,13 +1,13 @@
 <div>
-  <a [routerLink]=" ['../raceHome'] ">Home</a>
-  <a [routerLink]=" ['../createGame'] ">Create</a>
-  <a [routerLink]=" ['../gameBoard'] ">Game</a>
-  <a [routerLink]=" ['../history'] ">History</a>
+  <a [routerLink]=" ['../raceHome'] " style="color:white;">Home</a>
+  <a [routerLink]=" ['../createGame'] " style="color:white;">Create</a>
+  <a [routerLink]=" ['../gameBoard'] " style="color:white;">Game</a>
+  <a [routerLink]=" ['../history'] " style="color:white;">History</a>
 
    <a [routerLink]=" ['../raceHome'] ">
         <input type="button" class="btn btn-primary" value = 'Home'/>
     </a>
-    <h1 class="header">create  game</h1>
+    <h1 >create  game</h1>
     <div class="row">
       <div class="col-md-9">
         <input type="text" class="form-control" placeholder="Enter your name" [(ngModel)]=tempData.player/>

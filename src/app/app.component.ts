@@ -26,7 +26,7 @@ import { BaThemeConfig } from './theme/theme.config';
     </div>
     <footer class="al-footer clearfix">
       <div class="al-footer-main clearfix">
-        <div class="al-copy">&copy; Created by Chaya Glik, 2016</div>
+        <div class="al-copy">&copy; Created by Zipi & Zipi, 2016</div>
       </div>
     </footer>
     <ba-back-top position="200"></ba-back-top>
