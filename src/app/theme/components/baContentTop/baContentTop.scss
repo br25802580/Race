@@ -3,23 +3,25 @@
 .content-top {
     /*padding-top: 13px;
   padding-bottom: 27px; by br*/
-  /*padding-top: 10px;
-  padding-bottom: 12px; by br*/
   padding-top: 13px;
   /*padding-bottom: 27px; //by br*/
   padding-bottom: 10px;
+
+      padding-top: 10px;
+    padding-bottom: 17px;
 }
 
-h1.al-title {
+h3.al-title {
   font-weight: $font-bold;
   color: $default-text;
   float: left;
   width: auto;
   margin: 0;
-  padding: 0;
-  font-size: 24px;
+  padding: 5px 0 0;
+ // font-size: 24px;
   text-transform: uppercase;
   opacity: 0.9;
+  text-shadow: black 2px 2px 7px;
 }
 
 .al-breadcrumb {

@@ -1,3 +1,4 @@
+<h4>Choose here an agent</h4>
 <div class="feed-messages-container">
   <div class="feed-message" *ngFor="let message of feed" (click)="expandMessage(message)">
     <div class="message-icon" *ngIf="message.type == 'text-message'">
@@ -10,7 +11,7 @@
     <div class="text-block text-message">
       <div class="message-header">
         <span class="author">{{ message.author }} {{ message.surname}}</span>
-        <button routerLink="/map" class="btn btn-default  btn-xs">View in Map</button>
+        <!--<button routerLink="/map" class="btn btn-default  btn-xs">View in Map</button>-->
       </div>
       <div class="message-content line-clamp" [ngClass]="{'line-clamp-2' : !message.expanded}">
         <span *ngIf="message.preview">{{ message.header }} </span>{{ message.text }}

@@ -15,10 +15,10 @@ export const PAGES_MENU = [
         }
       },
       {
-        path: 'search',
+        path: 'appointments',
         data: {
           menu: {
-            title: 'Search',
+            title: 'Appointments',
             icon: 'ion-edit',
             selected: false,
             expanded: false,
@@ -27,28 +27,28 @@ export const PAGES_MENU = [
         },
         children: [
           {
-            path: 'last-search',
+            path: 'agent-list',
             data: {
               menu: {
-                title: 'Last Search',
+                title: 'Make Appointment',
               }
             }
           },
           {
-            path: 'store-list',
+            path: 'last-appointments',
             data: {
               menu: {
-                title: 'New Search',
+                title: 'Last Apointments',
               }
             }
           }
         ]
       },
       {
-        path: 'stores',
+        path: 'agents',
         data: {
           menu: {
-            title: 'Stores',
+            title: 'Agents',
             icon: 'ion-document',
             selected: false,
             expanded: false,
@@ -109,18 +109,10 @@ export const PAGES_MENU = [
         },
         children: [
           {
-            path: 'calculate-route',
+            path: 'first-tool',
             data: {
               menu: {
-                title: 'Calculate Route',
-              }
-            }
-          },
-          {
-            path: 'recommendations',
-            data: {
-              menu: {
-                title: 'Recommendations',
+                title: 'First Tool',
               }
             }
           }

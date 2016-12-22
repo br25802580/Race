@@ -17,7 +17,7 @@ import { AppState, InternalStateType } from './app.service';
 import { GlobalState } from './global.state';
 import { NgaModule } from './theme/nga.module';
 import { HomeModule } from './home/home.module';
-import { SearchModule } from './search/search.module';
+import { AppointmentsModule } from './appointments/appointments.module';
 import { MapModule } from './map/map.module';
 import { AgmCoreModule } from 'angular2-google-maps/core';
 
@@ -49,7 +49,7 @@ type StoreType = {
     ReactiveFormsModule,
     NgaModule.forRoot(),
     HomeModule,
-    SearchModule,
+    AppointmentsModule,
     MapModule,
     routing,
     AgmCoreModule.forRoot({ apiKey: 'AIzaSyA3MSv-mmUENEGYU4-0d37eWaASZji01zQ' }),

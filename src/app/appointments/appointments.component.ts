@@ -1,14 +1,14 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'search',
+  selector: 'appointments',
   encapsulation: ViewEncapsulation.None,
     template: `<router-outlet></router-outlet>`,
-  //template: require('./search.html'),
-  styles: [require('./search.scss')]
+  //template: require('./appointments.html'),
+  styles: [require('./appointments.scss')]
 })
 
-export class Search {
+export class Appointments {
   constructor() {
   }
 }

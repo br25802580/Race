@@ -3,9 +3,9 @@ import { CommonModule }  from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CKEditorModule } from 'ng2-ckeditor';
 import { NgaModule } from '../theme/nga.module';
-import { Search } from './search.component';
-import { StoreListComponent } from './store-list/store-list.component';
-import { StoreListService } from './store-list/store-list.service';
+import { Appointments } from './appointments.component';
+import { AgentListComponent } from './agent-list/agent-list.component';
+import { AgentListService } from './agent-list/agent-list.service';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -17,12 +17,12 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   declarations: [
-    Search,
-    StoreListComponent
+    Appointments,
+    AgentListComponent
   ],
   providers: [
-    StoreListService
+    AgentListService
   ]
 })
-export  class SearchModule {
+export  class AppointmentsModule {
 }
