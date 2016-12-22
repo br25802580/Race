@@ -1,0 +1,7 @@
+.sebm-google-map-container{height: 400px; width: 400px;}
+.text{font-size: 16px; color:'#123456' }
+
+#pano , #map{
+    width:380px;
+    height:380px;
+}

@@ -1,0 +1,20 @@
+<div>
+    <h1>Game</h1>
+    <sebm-google-map [latitude]="point.lat" [longitude]="point.lng"  [zoom]="16">
+        <sebm-google-map-marker [latitude]="point.lat" [longitude]="point.lng" [label]="gameData.player"></sebm-google-map-marker>
+        <!--<sebm-google-map-marker [latitude]="source.lat" [longitude]="source.lng" [label]="A"></sebm-google-map-marker>
+        <sebm-google-map-marker [latitude]="destination.lat" [longitude]="destination.lng" [label]="B"></sebm-google-map-marker>-->
+        <sebm-google-map-polyline [strokeColor]="red"></sebm-google-map-polyline>
+        <sebm-google-map-marker></sebm-google-map-marker>
+    </sebm-google-map>
+    <input type='button' class='btn btn-primary' value="Start" (click)="movePointer()"/>
+    <input type="button" class='btn btn-primary' value="get map" (click)="getMap()"/>
+    <label class='text'>distance:{{distance}}</label>
+    <label class='text'>, address:{{address}}</label>
+    <br />
+    <label>{{timerStr}}</label>
+
+    <div id="map"></div>
+    <div id="pano"></div>
+
+</div>

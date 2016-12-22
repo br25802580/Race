@@ -1,0 +1,19 @@
+<div>
+ <!-- <a [routerLink]=" ['../raceHome'] ">Home</a>
+  <a [routerLink]=" ['../createGame'] ">Create</a>
+  <a [routerLink]=" ['../gameBoard'] ">Game</a>
+  <a [routerLink]=" ['../history'] ">History</a>-->
+
+    <a [routerLink]=" ['../createGame'] ">
+      <input type="button" class="btn btn-primary" value = 'Back'/>
+    </a>
+    <div class="row">
+      <div class="col-md-4" >
+        <div class="gameDiv"><game [gameData]="gameData"  (onchangeKM)="distanceFormat($event)"></game></div>
+      </div>
+      <div class="col-md-5">
+        <div class="gameDiv"><gameDetails [gameData]="gameData" [test]='test' [currentAddress]="currentAddress" [distance1]="distance"></gameDetails></div>
+        <div class="gameDiv"><gameMap [gameData]="gameData"></gameMap></div>
+      </div>
+    </div>
+</div>

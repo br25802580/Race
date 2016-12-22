@@ -1,0 +1,77 @@
+<div>
+  <a [routerLink]=" ['../raceHome'] ">Home</a>
+  <a [routerLink]=" ['../createGame'] ">Create</a>
+  <a [routerLink]=" ['../gameBoard'] ">Game</a>
+  <a [routerLink]=" ['../history'] ">History</a>
+
+   <a [routerLink]=" ['../raceHome'] ">
+        <input type="button" class="btn btn-primary" value = 'Home'/>
+    </a>
+    <h1 class="header">create  game</h1>
+    <div class="row">
+      <div class="col-md-9">
+        <input type="text" class="form-control" placeholder="Enter your name" [(ngModel)]=tempData.player/>
+        <accordion [closeOthers]="oneAtATime">
+                <accordion-group class="buttonMenu" heading="SELECT YOUR CAR">   
+                  <label>select color</label>       
+                  <div class="row">
+                    <input class="btnColor" type="button" (click)="setSelectedColor('pink')" style="background-color: pink;"/>
+                    <input class="btnColor" type="button" (click)="setSelectedColor('DarkViolet')" style="background-color: DarkViolet;"/>
+                    <input class="btnColor" type="button" (click)="setSelectedColor('Coral')" style="background-color: Coral;"/>
+                    <input class="btnColor" type="button" (click)="setSelectedColor('Gold')" style="background-color: Gold;"/>
+                    <input class="btnColor" type="button" (click)="setSelectedColor('red')" style="background-color: red;"/>
+                    <input class="btnColor" type="button" (click)="setSelectedColor('orange')" style="background-color: orange;"/>
+                    <input class="btnColor" type="button" (click)="setSelectedColor('green')" style="background-color: green;"/>
+                    <input class="btnColor" type="button" (click)="setSelectedColor('blue')" style="background-color: blue;"/>
+                  </div>             
+                </accordion-group>  
+                <accordion-group class="buttonMenu" heading="CREATE ROUTE">
+                  <p>CREATE ROUTE</p>
+                  <input type="text" class='form-control' [(ngModel)]="tempData.route.source"  placeholder="enter source"/>
+                  <input type="text" class='form-control' [(ngModel)]="tempData.route.destination"  placeholder="enter destination"/>
+                </accordion-group>
+                <accordion-group class="buttonMenu" heading="SELECT LEVEL">
+                  <form>
+                    <fieldset> 
+                      <legend>Select Level</legend> 
+                          <input type="radio" name="gender" (change)="setSelectedLevel('low')"> low 
+                          <input type="radio" name="gender" (change)="setSelectedLevel('intermediate')"> intermediate 
+                          <input type="radio" name="gender" (change)="setSelectedLevel('high')"> high 
+                    </fieldset>
+                  </form>
+                  <form>
+                    <fieldset> 
+                      <legend>Select Num Players</legend> 
+                          <input type="radio" name="gender" (change)="setSelectednNumPlayers(1)"> play alone
+                          <input type="radio" name="gender" (change)="setSelectednNumPlayers(2)"> 2 players 
+                          <input type="radio" name="gender" (change)="setSelectednNumPlayers(3)"> 3 players 
+                    </fieldset>
+                  </form>
+                </accordion-group>
+        </accordion>
+        <a [routerLink]=" ['../gameBoard'] ">
+            <input type="button" class="btn btn-primary buttonMenu" (click)="saveGameData()" [tooltip]="'Click for START'" value = 'START'/>
+        </a>
+      </div>
+
+      <div class="panel panel-primary panelPadding col-md-3">
+        <div class="panel-heading">Your Game</div>
+        <div class="panel-body">
+          <div>  
+              <label>color:</label>
+              <label id="labelColor">{{tempData.carColor}} </label>
+          </div>
+          <div>  
+              <label>from: {{tempData.route.source}}</label>
+              <label> to: {{tempData.route.destination}}</label>
+          </div>
+          <div>  
+              <label>Level: {{tempData.level}} </label><div></div>
+              <label>Num Players: {{tempData.numPlayers}}</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
