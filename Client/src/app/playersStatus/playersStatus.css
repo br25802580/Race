@@ -1,0 +1,13 @@
+.text{
+    font-size: 13px;
+     color:black;
+     margin-top: 10px;
+     }
+
+.text:last-of-type {
+    margin-bottom: 15px;
+}
+
+.text:first-of-type {
+    margin-top: 15px;
+}

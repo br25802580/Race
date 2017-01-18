@@ -1,0 +1,43 @@
+@import "theme/theme";
+.text-race{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "PBS_KIDS_Headline_Bold", "Arial", sans-serif;
+    text-transform: uppercase;
+}
+
+
+.btn-race {
+    width:100%;
+    /*box-shadow: 0 0px #4d0700;*/
+    display: inline-block;
+    border: none;
+    border-bottom-width: .3em;
+    border-bottom-style: solid;
+    padding: 0.5em 1.2em;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "PBS_KIDS_Headline_Bold", "Arial", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 0;
+    vertical-align: bottom;
+    line-height: 1.2em;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: border-width, top, bottom, margin;
+    transition-property: border-width, top, bottom, margin;
+}
+.btn-race:hover{
+  transform: translateY(4px);
+}
+.orange {
+    background-color: #ef5425;
+    border-color: #b54327 !important;
+}
+.orange:hover {
+  box-shadow: 0 3px #b54327;    
+}

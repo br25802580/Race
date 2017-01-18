@@ -1,0 +1,174 @@
+<div>
+  <!--<a [routerLink]=" ['../raceHome'] ">
+        <input type="button" class="btn btn-primary" value = 'Home'/>
+    </a>-->
+
+  <div class="row CreateGameRow">
+
+    <div class="col-md-8">
+      <input type="text" class="input-yellow alert form-control" placeholder="Enter your name" [(ngModel)]=tempData.player/>
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="card">
+          <div class="card-header card-header-purple " role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" class="text-race" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          SELECT YOUR CAR
+        </a>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-block">
+              <div class="row">
+                <input class="btnColor" type="button" (click)="setSelectedColor('brown')" style="background-color: brown;" />
+<input class="btnColor" type="button" (click)="setSelectedColor('gray')" style="background-color: gray;" />
+<input class="btnColor" type="button" (click)="setSelectedColor('red')" style="background-color: red;" />
+<input class="btnColor" type="button" (click)="setSelectedColor('black')" style="background-color: black;" />
+<input class="btnColor" type="button" (click)="setSelectedColor('yellow')" style="background-color:yellow ;" />
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+  <div class="card-header card-header-pink " role="tab" id="headingTwo">
+    <h5 class="mb-0">
+      <a class="collapsed text-race" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+        aria-controls="collapseTwo">
+          CREATE ROUTE
+        </a>
+    </h5>
+  </div>
+  <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+    <div class="card-block">
+      <input type="text" class='form-control' [(ngModel)]="tempData.route.source" placeholder="enter source" />
+      <input type="text" class='form-control' [(ngModel)]="tempData.route.destination" placeholder="enter destination" />
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header card-header-dark-green" role="tab" id="headingThree">
+    <h5 class="mb-0">
+      <a class="collapsed text-race" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+        aria-controls="collapseThree">
+          SELECT LEVEL
+        </a>
+    </h5>
+  </div>
+  <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+    <div class="card-block">
+      <form>
+        <fieldset>
+          <legend>Select Level</legend>
+          <input type="radio" name="gender" (change)="setSelectedLevel(1)"> low
+          <input type="radio" name="gender" (change)="setSelectedLevel(2)"> intermediate
+          <input type="radio" name="gender" (change)="setSelectedLevel(3)"> high
+          <input type="radio" name="gender" (change)="setSelectedLevel(4)"> high+
+          <input type="radio" name="gender" (change)="setSelectedLevel(5)"> master
+        </fieldset>
+      </form>
+      <form>
+        <fieldset>
+          <legend>Select Num Players</legend>
+          <input type="radio" name="gender" (change)="setSelectednNumPlayers(1)"> play alone
+          <input type="radio" name="gender" (change)="setSelectednNumPlayers(2)"> 2 players
+          <input type="radio" name="gender" (change)="setSelectednNumPlayers(3)"> 3 players
+          <input type="radio" name="gender" (change)="setSelectednNumPlayers(4)"> 4 players
+          <input type="radio" name="gender" (change)="setSelectednNumPlayers(5)"> 5 players
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- <a [routerLink]=" ['../gameBoard'] ">-->
+<input type="button" class="btn-race orange" (click)="saveGameData()" [tooltip]="'Click for START'" value='START' />
+<!--</a>-->
+</div>
+
+</div>
+<div class="col-md-1">
+
+  <!--<form data-toggle="validator" role="form">
+    <div class="form-group">
+      <label for="inputName" class="control-label">Name</label>
+      <input type="text" class="form-control" id="inputName" placeholder="Cina Saffary" required>
+    </div>
+    <div class="form-group has-feedback">
+      <label for="inputTwitter" class="control-label">Twitter</label>
+      <div class="input-group">
+        <span class="input-group-addon">@</span>
+        <input type="text" pattern="^[_A-z0-9]{1,}$" maxlength="15" class="form-control" id="inputTwitter" placeholder="1000hz" required>
+      </div>
+      <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+      <div class="help-block with-errors">Hey look, this one has feedback icons!</div>
+    </div>
+    <div class="form-group">
+      <label for="inputEmail" class="control-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid"
+        required>
+      <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword" class="control-label">Password</label>
+      <div class="form-inline row">
+        <div class="form-group col-sm-6">
+          <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+          <div class="help-block">Minimum of 6 characters</div>
+        </div>
+        <div class="form-group col-sm-6">
+          <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match"
+            placeholder="Confirm" required>
+          <div class="help-block with-errors"></div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="radio">
+        <label>
+        <input type="radio" name="underwear" required>
+        Boxers
+      </label>
+      </div>
+      <div class="radio">
+        <label>
+        <input type="radio" name="underwear" required>
+        Briefs
+      </label>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="checkbox">
+        <label>
+        <input type="checkbox" id="terms" data-error="Before you wreck yourself" required>
+        Check yourself
+      </label>
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>-->
+</div>
+<div class="col-md-3">
+  <h3 class="panel-title">Your Game</h3>
+  <div class="panel-body" ng-transclude="">
+    <div class="ng-scope">
+      <div class="alert card-header-purple">
+        <strong>color: </strong><label id="labelColor">{{tempData.carColor}}</label>
+      </div>
+      <div class="alert card-header-pink">
+        <div><strong>from: </strong>{{tempData.route.source}}</div>
+        <div><strong>to: </strong>{{tempData.route.destination}}</div>
+      </div>
+      <div class="alert card-header-dark-green">
+        <strong>Level: </strong>{{tempData.level}}
+      </div>
+      <div class="alert input-yellow">
+        <strong>Num Players: </strong>{{tempData.numPlayers}}
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+  <img class="car3" src="../../images/car3.png" />

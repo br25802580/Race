@@ -1,0 +1,15 @@
+.sebm-google-map-container {
+     height: 400px;
+     width: 400px;
+}
+
+.text {
+    font-size: 16px;
+    color:'#123456'
+}
+
+.detailsRow {
+     /*border: white 3px solid; 
+     padding: 10px;
+     background: rgba(29, 88, 92, 0.9); */
+}

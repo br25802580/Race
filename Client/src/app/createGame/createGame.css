@@ -1,0 +1,6 @@
+.sebm-google-map-container{height: 400px; width: 400px;}
+.text{font-size: 16px; color:'#123456' }
+.sebm-google-map-container-inner{
+        width: 99%;
+        margin: 0 auto;
+}

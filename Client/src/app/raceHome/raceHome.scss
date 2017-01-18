@@ -1,0 +1,47 @@
+.header {
+    color: slategray;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+.buttonMenu{
+    width:100%;
+    margin-bottom: 10px;
+    height:50px;
+}
+.panel-default{
+    width:80%;
+}
+.btnColor{
+    width: 74px;
+    height: 74px;
+    margin: 1px;
+}
+
+
+.btn-start-game{
+    font-size:30px;
+    bottom: 85px;
+}
+
+@media (max-width: 400px) {
+    .bgImage{
+        height: 156px;
+        max-width: inherit;
+        width: 500px;
+        margin-left: -250px;
+        left: 50%;
+        position: relative;
+    }
+}
+.btnContainer{
+    display: -webkit-flex; /* Safari */
+    justify-content: center;
+}
+
+fieldset{
+    margin-bottom: 30px;
+    background-color: lightblue;
+}
+

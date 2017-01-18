@@ -1,0 +1,88 @@
+.header {
+    color: slategray;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+.buttonMenu{
+    width:80%;
+    margin-bottom: 10px;
+    height:50px;
+}
+.panel-default{
+    width:80%;
+}
+.btnColor{
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+    border: none;
+}
+.CreateGameRow{
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 5%;
+}
+
+.car3{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        height: 500px;
+}
+
+.panel-default, .buttonMenu{
+    width: 100%;
+}
+
+.myDiv {
+    width: 700px;
+    height: 600px;
+}
+#map2{
+    width: 300px;
+    height: 300px; 
+}
+
+.sebm-google-map-container{height:300px; width: 300px;}
+.text{font-size: 16px; color:'#123456' }
+.sebm-google-map-container-inner{
+        width: 99%;
+        margin: 0 auto;
+}
+.card-header{
+    border-radius: 0px !important;
+    line-height: 2em;
+    height: 100%;
+}
+.card{
+    border-radius: 0px;
+    background-color: #45b0e4;
+}
+.card-header-dark-green{
+    background-color: #3d9243;
+    border-radius: 0px !important;
+}
+.card-header-pink{
+    background-color: #d33c79;
+    border-radius: 0px !important;
+}
+.card-header-purple{
+    background-color: #b70056;
+    border-radius: 0px !important;
+}
+.card-header-green{
+    background-color: #83c341;
+    border-radius: 0px !important;
+}
+.input-yellow{
+    background-color: #ffaa00;
+    border-radius: 0px !important;
+}
+
+fieldset{
+    margin-bottom: 30px;
+    background-color: white;
+    color: black;
+}

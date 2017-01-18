@@ -1,0 +1,35 @@
+<!--<a [routerLink]=" ['../createGame'] ">
+    <input type="button" class="btn btn-primary" value='Back' />
+  </a>-->
+<div class="row">
+  <div class="col-md-6">
+    <div class="gameDiv">
+      <game [gameData]="gameData" (onchangeKM)="distanceFormat($event)" (onSuccess)="isSuccess($event)"></game>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-9 col-xs-9 gameDiv details">
+        <gameDetails [gameData]="gameData" [test]='test' [currentAddress]="currentAddress" [distance1]="distance" [success]="success"></gameDetails>
+      </div>
+      <div class="col-md-3 col-xs-3">
+        <playersStatus [allMarkersLocation]="playersLocation" [gameData]="gameData"></playersStatus>
+      </div>
+    </div>
+    <div class="row">
+      <gameMap class="col-md-10" [gameData]="gameData" (onChangeMarkersLocation)="changeMarkersLocation($event)" [currentPoint]="currentPoint"
+        [locations]="locations">
+      </gameMap>
+    </div>
+
+
+
+    <!--<div><input type="button" class='btn-primary focuseBtn' value="center map" /></div>
+          <div><input type="button" class='btn-primary focuseBtn' value="reduce map" /></div>-->
+
+
+  </div>
+</div>
+<div class="winImg">
+  <img class="imgSize" src="../../images/5star.jpg" />
+</div>

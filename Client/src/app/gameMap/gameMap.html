@@ -1,0 +1,16 @@
+<div class="row">
+  <sebm-google-map id="map" [latitude]="point.lat" [longitude]="point.lng" [zoom]="16">
+    <sebm-google-map-polyline id="pol" [strokeColor]="gameData.carColor">
+      <sebm-google-map-polyline-point *ngFor="let loc of locations.points" [latitude]="loc.lat" [longitude]="loc.lng">
+      </sebm-google-map-polyline-point>
+    </sebm-google-map-polyline>
+    <sebm-google-map-marker *ngFor="let m of markers" [latitude]="m.lat" [longitude]="m.lng" [markerDraggable]="m.draggable"
+      [iconUrl]="m.iconUrl">
+      <sebm-google-map-info-window>
+        <p>More info!</p>
+      </sebm-google-map-info-window>
+    </sebm-google-map-marker>
+  </sebm-google-map>
+  
+  <input type="button" class='btn btn-primary' value="add players" (click)="addPlayersToMap()" />
+</div>

@@ -1,0 +1,29 @@
+<div class="row detailsRow" > 
+    <h3>gameDetails</h3>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-6">
+                <label  class='form-control' name="source" placeholder="source">{{gameData.route.source}}</label>
+            </div>
+            <div class="col-md-6">
+                <label type="text" class='form-control' name="destanation" >{{gameData.route.destination}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label type="text" class='form-control' name="playerName">{{gameData.player}}</label>
+            </div>
+            <div class="col-md-6">
+                <label type="text" class='form-control' name="timePast">{{time.format('HH:mm:ss')}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label type="text" class='form-control' name="distance">{{distance1}}</label>
+            </div>
+            <div class="col-md-6">
+                <label type="text" class='form-control' name="currentPlace">{{currentAddress}}</label>
+            </div>
+        </div>
+    </div>
+</div>

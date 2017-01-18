@@ -1,0 +1,6 @@
+<div class="bg">
+    <div class="text" *ngFor="let key of keys();">
+        <img src={{allMarkersLocation[key].marker}}/>
+        <b>{{distanceFromDestination(allMarkersLocation[key].currentLocation)}}</b>       
+    </div>
+</div>
