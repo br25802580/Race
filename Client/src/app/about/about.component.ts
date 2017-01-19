@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
  * We are using some magic with es6-promise-loader that will wrap the module with a Promise
  * see https://github.com/gdi2290/es6-promise-loader for more info
  */
-
+/*try github */
 console.log('`About` component loaded asynchronously');
 
 @Component({
