@@ -6,7 +6,7 @@ export default {
             localStorage.setItem('games', JSON.stringify([
                 {
                     id: '3',
-                    playerName: 'Zipi Saibert',
+                    playerName: 'Zipi zaibert',
                     numPlayers: 5,
                     date: new Date()
                 },
